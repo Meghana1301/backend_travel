@@ -1,202 +1,409 @@
-<!DOCTYPE html>
-<html lang="en">
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meghana's Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+:root {
+    ---main-radius: 10px;
+    --main-padding: 10px;
+    --line-heightv: 2;
+    --box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
 
-<body>
-    <div class="container">
-        <header>
-            <img src="./images/profile.png " alt="profile">
-            <div class="myText">
-                <div id="userName">Meghana Vasamsetty</div>
-                <div id="jobtitle">Aspring Full Stack Developer</div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#achievements">Achievements</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div id="skills">
-            <h3>Skills</h3>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Python</span>
-            <span>Java</span>
-            <span>SQL</span>
-            <span>Node.js</span>
-            <span>React</span>
-            <span>Git</span>
-            <span>GitHub</span>
-            <span>AWS</span>
-            <span>Azure</span>
-            <span>Team Player</span>
-            <span>Excellent communication</span>
-            <span>Problem solving</span>
-            <span>Adaptability</span>
-            <span>Time Management</span>
-        </div>
-        <div id="about">
-            <h3>About</h3>
-            <p>I’m pursuing a master’s in computer science at the University of New Haven after completing my BTech
-                in computer science in Hyderabad. I have expertise in web technologies, data structures, algorithms,
-                and Java, and I'm actively seeking job opportunities. With strong technical skills and analytical
-                skills, I have an experience in building scalable web applications and working with AWS, implementing
-                DevOps practices
-                for CI/CD.</p>
-        </div>
-        <div id="experience">
-            <h3>Work Experience</h3>
-            <img src="./images/planon1.jpg" alt="planon">
-            <div class="workText">
-                <div class="workTitle">
-                    <p><strong>Planon</strong></p>
-                </div>
-                <div class="workRole">
-                    <p>Developer</p>
-                    <p><i class="fa fa-map-marker" id="mapIcon"></i>Hyderabad,India</p>
-                </div>
-            </div>
-            <p id="duration">July 2022- July 2023</p>
-            <p id="details">Worked as a Software Developer at Planon, where I developed and maintained
-                enterprise-level software
-                solutions. My responsibilities included coding in Java, enhancing web-based platforms, collaborating
-                with cross-functional teams, and implementing data structures and algorithms to improve system
-                performance. </p>
-            <img src="./images/dbs.png" alt="dbs">
-            <div class="workText">
-                <div class="workTitle">
-                    <p><strong>DBS</strong>
-                </div>
-                <div class="workRole">
-                    <p>Developer</p>
-                    <p><i class="fa fa-map-marker" id="mapIcon"></i>Hyderabad,India</p>
-                </div>
-            </div>
-            <p id="duration">August 2021-July 2022</p>
-            <p id="details"> Contributed to the development and optimization of financial systems at DBS.
-                Collaborated with a
-                team to create robust solutions in Java and web technologies, focusing on efficiency and
-                scalability. Participated in agile development processes, ensuring timely delivery of key features
-                while enhancing the user experience.</p>
-        </div>
-        <div id="education">
-            <h3>Education</h3>
-            <img src="./images/unh.jpg" alt="unh">
-            <div class="edText">
-                <div class="edTitle">
-                    <p> <strong>University of New Haven</strong>
-                </div>
-                <div class="edRole">
-                    <p>MS in Computer Science</p>
-                    <p><i class="fa fa-map-marker" id="mapIcon"></i>Connecticut,USA</p>
-                </div>
-            </div>
-            <p id="duration">August 2023-May 2025</p>
-            <p id="details">Key learnings include advanced algorithms, cloud computing, machine learning, and
-                full-stack development. Worked on real-world projects using React, Node.js, and AWS. Researched data
-                structures and scalability in distributed systems. Gained experience in DevOps practices, including
-                CI/CD and containerization using Docker.</p>
-            <img src="./images/cmrit.png" alt="planon">
-            <div class="edText">
-                <div class="edTitle">
-                    <p><strong>CMRIT</strong></p>
-                </div>
-                <div class="edRole">
-                    <p>B.Tech in Computer Science</p>
-                    <p><i class="fa fa-map-marker" id="mapIcon"></i>Hyderabad,India</p>
-                </div>
-            </div>
-            <p id="duration">August 2019-May 2023</p>
-            <p id="details">Focused on data structures, algorithms, databases, and web development. Gained practical
-                experience through internships and projects, building scalable web apps and optimizing databases.
-                Graduated with a strong foundation in software engineering principles.</p>
-        </div>
-        <div id="projects">
-            <h3>Projects</h3>
-            <table class="project-table">
-                <tr>
-                    <td>
-                        <img src="./images/ecart.png" alt="cart">
-                        <p id="ptitle"><strong>E-Commerce Website</strong></p>
-                        <p>Developed a dynamic e-commerce platform using React and Node.js, with MongoDB for
-                            database management. Integrated secure payment gateways and product recommendation
-                            features.</p>
-                    </td>
-                    <td id="evenColumn">
-                        <img src="./images/smanage.png" alt="studentManage">
-                        <p id="ptitle"><strong>Student Management System</strong></p>
-                        <p>Created a full-stack web app using Python (Flask) and MySQL to manage student data.
-                            Implemented user roles for students, teachers, and admins, with real-time performance
-                            analytics and reporting features.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="./images/chatapp.png" alt="chatapp">
-                        <p id="ptitle"><strong>Chat Application</strong></p>
-                        <p>Created a real-time chat application using Node.js, Socket.io, and Express, enabling
-                            seamless communication between multiple users. Designed with a simple interface and
-                            implemented features like private messaging and message timestamps.</p>
-                    </td>
-                    <td id="evenColumn">
-                        <img src="./images/cloudStorage.jpg" alt="cloud">
-                        <p id="ptitle"><strong>Cloud-Based File Storage</strong></p>
-                        <p>Built a file storage system using AWS S3 and Node.js. Enabled secure file uploads, access
-                            control, and sharing with JWT authentication. Integrated real-time file synchronization
-                            and version control for enhanced user experience.</p>
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    background-color: #f3f2e7;
+    margin: 0 15px;
+}
 
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div id="certfications">
-            <div id="certifications">
-                <h3>Certifications</h3>
-                <div class="certiImage"><img src="./images/certiIcon.png" alt="Certification Logo"></div>
-                <div class="certi"> <strong>Oracle Certified Java Programmer (OCJP)</strong> - Earned certification
-                    demonstrating proficiency in Java programming and development.</div>
-                <div class="certiImage"> <img src="./images/certiIcon.png" alt="Certification Logo"></div>
-                <div class="certi"> <strong>Microsoft Certified: Azure Fundamentals</strong> - Achieved foundational
-                    certification in cloud concepts and Azure services.</div>
-            </div>
-        </div>
-        <div id="achievements">
-            <h3>Achievements</h3>
-            <div class="achieveImage"><img src="./images/achieveIcon.png" alt="Certification Logo"> </div>
-            <div class="achieve"> Developed and deployed a web-based project management tool at Planon that improved
-                team collaboration and task tracking by 30%.</div>
-            <div class="achieveImage"><img src="./images/achieveIcon.png" alt="Certification Logo"></div>
-            <div class="achieve">Successfully led a project to optimize system performance at DBS, reducing query
-                response time by 25% through efficient use of data structures and algorithms</div>
-        </div>
-        <footer>
-            <div class="left">
-                <p><a href="mailto:meghanavasamsetty2002@gmail.com"><i
-                            class="fa fa-envelope"></i>meghanavasamsetty2002@gmail.com</a></p>
-            </div>
-            <div class="right">
-                <p><a href="https://www.linkedin.com/in/meghana-vasamsetty-8015a01a9/">
-                        <i class="fa fa-linkedin"></i>LinkedIn</a>|<a href="https://github.com/"> <i
-                            class="fa fa-github"></i>GitHub</a>|<a href="https://x.com/"><i
-                            class="fa fa-twitter"></i>Twitter</a></p>
-            </div>
-        </footer>
-    </div>
-</body>
+body h3 {
+    margin: 5px;
+}
 
-</html>
-<!-- Website Link="https://meghana1301.github.io/Meghana_Portfolio_Grid/"
-Wbsite Repo="https://github.com/Meghana1301/Meghana_Portfolio_Grid" -->
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "header header"
+        "skills about"
+        "ed exp"
+        "pro pro"
+        "certi achieve"
+        "footer footer";
+    height: 100vh;
+    gap: 1.5rem;
+}
+
+header {
+    grid-area: header;
+    background-color: #333;
+    border-radius: 15px;
+    margin-top:5px;
+}
+
+header img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: 5px;
+    margin-top:5px;
+}
+
+.myText {
+    margin: 0;
+    color: white;
+    font-size: 15px;
+}
+
+#userName,
+#jobtitle {
+    padding: 5px 0;
+    font-size: large;
+}
+
+.myText,
+header img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav {
+    float: right;
+    width: max-content;
+    text-align: center;
+    margin: 15px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 10px;
+    font-size: large;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: Lavender;
+    color: black;
+}
+
+#skills {
+    grid-area: skills;
+    background-color: #f7cbcf;
+    padding: var(--main-padding);
+    border-radius: var(---main-radius);
+
+}
+
+#skills span {
+    background-color: rgb(252, 249, 249);
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin: 7px;
+    display: inline-block;
+}
+
+#skills:hover,
+#about:hover,
+#experience:hover,
+#education:hover,
+#projects:hover,
+#certfications:hover,
+#achievements:hover {
+    border: 1px solid white;
+    transform: scale(1);
+}
+
+#about {
+    grid-area: about;
+    background-color: #f9d2c8;
+    padding: var(--main-padding);
+    border-radius: var(---main-radius);
+}
+
+#about p {
+    margin-left: 10px;
+    line-height: var(--line-heightv);
+}
+
+#experience {
+    grid-area: exp;
+    background-color: #ddeedd;
+    padding: var(--main-padding);
+    border-radius: var(---main-radius);
+    line-height: var(--line-heightv);
+}
+
+#experience img,
+#education img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 5px;
+}
+
+#education {
+    grid-area: ed;
+    background-color: #e4d1d1;
+    padding: var(--main-padding);
+    border-radius: var(---main-radius);
+    line-height: var(--line-heightv);
+}
+
+.workText,
+.edText {
+    color: black;
+}
+
+#jobtitle,
+.workRole,
+.edRole,
+#duration {
+    font-style: italic;
+    font-size: small;
+}
+
+.workText,
+#experience img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.edText,
+#education img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#duration {
+    float: right;
+}
+
+#details {
+    margin: 10px;
+}
+
+#proDetails {
+    margin: 10px;
+}
+
+#projects {
+    grid-area: pro;
+    background-color: #cdcde763;
+    padding: var(--main-padding);
+    border-radius: var(---main-radius);
+    line-height: var(--line-heightv);
+}
+
+.project-table {
+    width: 100%;
+    border-collapse: separte;
+    border-radius: 5px;
+    border-spacing: 10px;
+}
+
+.project-table td {
+    width: 49%;
+    padding: 15px;
+    text-align: left;
+    text-align: justify;
+    vertical-align: middle;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #f9ece3
+}
+
+#projects img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    float: right;
+    margin: 10px;
+}
+
+#projects img,
+#ptitle {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#certfications {
+    grid-area: certi;
+    background-color: #f6d8db;
+    padding: var(--main-padding);
+    border-radius: var(---main-radius);
+}
+
+#achievements {
+    grid-area: achieve;
+    background-color: #70ae752b;
+    padding: var(--main-padding);
+    border-radius: var(---main-radius);
+}
+
+#certifications img,
+#achievements img {
+    width: 50px;
+    height: 50px;
+}
+
+#achievements img {
+    margin: 5px;
+}
+
+.certiImage,
+.achieveImage {
+    float: left;
+}
+
+.certi,
+.achieve {
+    overflow: hidden;
+    line-height: 2;
+    color: #333;
+}
+
+i {
+    margin-right: 5px;
+}
+
+#mapIcon {
+    font-size: 18px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    border-radius: 5px;
+    padding: 5px 0;
+    margin-bottom: 5px;
+}
+
+footer .left {
+    float: left;
+}
+
+footer .right {
+    float: right;
+}
+
+footer p {
+    padding: 3px;
+    color: white;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:500px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header"
+            "about"
+            "skills"
+            "ed"
+            "exp"
+            "pro"
+            "certi"
+            "achieve"
+            "footer";
+    }
+
+    #userName,
+    #jobtitle {
+        margin: 5px;
+        padding: 3px;
+    }
+
+    header {
+        padding: 5px 0;
+        font-size: small;
+    }
+
+    #jobtitle {
+        float: left;
+    }
+
+    header img {
+        float: right;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin: 5px;
+    }
+
+    header p,
+    img {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    nav {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 4px 1px;
+    }
+
+    #about,
+    #education,
+    #experience,
+    #projects,
+    #certifications,
+    #achievements {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    #projects img {
+        float: right;
+        width: 80px;
+        height: auto;
+    }
+
+    .project-table td {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    footer .left,
+    footer .right {
+        float: none;
+        text-align: center;
+    }
+}
