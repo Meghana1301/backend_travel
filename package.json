@@ -2,8 +2,8 @@
   "name": "backend",
   "version": "1.0.0",
   "scripts": {
-    "start": "echo 'Static site'",
-    "build": "echo 'Static site deployment'"
+    "start": "node server.js",
+    "build": "node server.js"
   },
   "dependencies": {
     "mongodb": "^6.11.0"
