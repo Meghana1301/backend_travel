@@ -12,13 +12,18 @@
 <body>
     <main class="container">
         <header>
-            <img src="./images/profile.png " alt="profile">
-            <div class="myText">
-                <div id="userName">Meghana Vasamsetty</div>
-                <div id="jobtitle">Aspring Full Stack Developer</div>
-            </div>
-            <nav>
-                <ul>
+            <article id="profile">
+                <img src="./images/profile.png " alt="profile">
+                <div class="myText">
+                    <div id="userName">Meghana Vasamsetty</div>
+                    <div id="jobtitle">Aspring Full Stack Developer</div>
+                </div>
+            </article>
+            <a href="#" class="ham-icon" id="navToggle">
+                <i class="fa fa-bars"></i>
+            </a>
+            <nav id="mainNav">
+                <ul id="navMenu">
                     <li><a href="#about">About</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#experience">Experience</a></li>
@@ -202,7 +207,17 @@
                             class="fa fa-twitter"></i>Twitter</a></p>
             </div>
         </footer>
-        </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var navToggle = document.getElementById('navToggle');
+                var mainNav = document.getElementById('mainNav');
+                navToggle.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    mainNav.classList.toggle('responsive');
+                });
+            });
+        </script>
+    </main>
 </body>
 
 </html>
